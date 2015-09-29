@@ -23,13 +23,13 @@ thisColor = white
 
 def speed(speed):
 	font = pygame.font.SysFont(None, 25)
-	text = font.render("Speed: " + str(speed), True, black)
+	text = font.render("Speed: " + str(speed), True, white)
 	gameDisplay.blit(text,(700,0))
 
 
 def score(dodgedCount):
 	font = pygame.font.SysFont(None, 25)
-	text = font.render("Score: " + str(dodgedCount), True, black)
+	text = font.render("Score: " + str(dodgedCount), True, white)
 	gameDisplay.blit(text,(0,0))
 
 def message_displayCenter(textToDisplay,size,x,y):
@@ -96,7 +96,7 @@ def game_loop():
 
 		
 		x += xChanged
-		gameDisplay.fill(white)
+		gameDisplay.fill(black)
 		things(thing_startx, thing_starty, thing_width, thing_height)
 		thing_starty += thing_speed
 		drawBob(x, y)
