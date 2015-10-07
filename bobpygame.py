@@ -49,7 +49,7 @@ def things(thingx, thingy, thingw, thingh):
 	pygame.draw.rect(gameDisplay, (random.randrange(0,255),random.randrange(0,255),random.randrange(0,255)),[thingx,thingy,thingw, thingh])
 
 def text_objects(text, font):
-	textSurface = font.render(text, True, black)
+	textSurface = font.render(text, True, white)
 	return textSurface, textSurface.get_rect()
 
 def lost():
